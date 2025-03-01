@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/legendtharun/mt/static/css/main.30296cb7.css",
-    "main.js": "/legendtharun/mt/static/js/main.6736dfdd.js",
-    "static/media/marketplacehub.png": "/legendtharun/mt/static/media/marketplacehub.cd70854b365f5ab02557.png",
-    "static/media/boat1.webp": "/legendtharun/mt/static/media/boat1.c2edd79b00a3c139d583.webp",
-    "static/media/myImage1.png": "/legendtharun/mt/static/media/myImage1.702b8ee6c3038556639b.png",
-    "static/media/tunip.png": "/legendtharun/mt/static/media/tunip.b416cfc456e5b4dbd995.png",
-    "static/media/flames.png": "/legendtharun/mt/static/media/flames.4ca4a0b57f491164a7a6.png",
-    "index.html": "/legendtharun/mt/index.html",
-    "main.30296cb7.css.map": "/legendtharun/mt/static/css/main.30296cb7.css.map",
-    "main.6736dfdd.js.map": "/legendtharun/mt/static/js/main.6736dfdd.js.map"
+    "main.css": "/mt/static/css/main.30296cb7.css",
+    "main.js": "/mt/static/js/main.9451dab8.js",
+    "static/media/marketplacehub.png": "/mt/static/media/marketplacehub.cd70854b365f5ab02557.png",
+    "static/media/boat1.webp": "/mt/static/media/boat1.c2edd79b00a3c139d583.webp",
+    "static/media/myImage1.png": "/mt/static/media/myImage1.702b8ee6c3038556639b.png",
+    "static/media/tunip.png": "/mt/static/media/tunip.b416cfc456e5b4dbd995.png",
+    "static/media/flames.png": "/mt/static/media/flames.4ca4a0b57f491164a7a6.png",
+    "index.html": "/mt/index.html",
+    "main.30296cb7.css.map": "/mt/static/css/main.30296cb7.css.map",
+    "main.9451dab8.js.map": "/mt/static/js/main.9451dab8.js.map"
   },
   "entrypoints": [
     "static/css/main.30296cb7.css",
-    "static/js/main.6736dfdd.js"
+    "static/js/main.9451dab8.js"
   ]
 }
