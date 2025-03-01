@@ -1,0 +1,16 @@
+.boat {
+    clip-path: circle(40%);
+  position: relative;
+    transition: clip-path 0.3s ease-in-out; /* Smooth transition effect */
+  }
+  @media (max-width: 1024px) {
+    .circle {
+      clip-path: circle(25%) !important ;
+    }
+  }
+  @media (max-width: 768px) {
+    .circle {
+      clip-path: circle(20%) !important;
+    }
+  }
+  

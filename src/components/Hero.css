@@ -1,0 +1,20 @@
+.circle {
+  clip-path: circle(30%) !important;
+  transition: clip-path 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+@media (prefers-color-scheme: dark) {
+.myimage{
+  filter: drop-shadow(2px 0 0 #e4e3ed) 
+  drop-shadow(0 2px 0 #e4e3ed)
+  drop-shadow(-2px 0 0 #e4e3ed) 
+  drop-shadow(0 -2px 0 #e4e3ed);
+}}
+@media (prefers-color-scheme: light) {
+  .myimage{
+    filter: drop-shadow(2px 0 0 #13121c) 
+    drop-shadow(0 2px 0 #13121c)
+    drop-shadow(-2px 0 0 #13121c) 
+    drop-shadow(0 -2px 0 #13121c);
+  }
+}
