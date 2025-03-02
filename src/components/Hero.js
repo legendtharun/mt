@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { ReactTyped } from "react-typed";
@@ -7,8 +7,10 @@ import { SiWhatsapp } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
 import myImage from "../assets/myImage1.png";
-const Hero = () => {
+const Hero = ({ currentTheme }) => {
+  const [tapEffect, setTapEffect] = useState(false);
   const checkDot = (i) => {
     if (i < 49) {
       return "block";
@@ -88,7 +90,7 @@ const Hero = () => {
               A Passionate but Professional <br />
               <ReactTyped
                 strings={["Web Developer", "Web Designer", "UI/UX Designer"]}
-                typeSpeed={40}
+                typeSpeed={80}
                 backSpeed={50}
                 loop
                 className="text-pretty text-[#513ee0] "
@@ -120,6 +122,18 @@ const Hero = () => {
                 rotate: "5deg",
                 transition: { duration: 0.2, ease: "easeInOut" },
               }}
+              onTap={() => {
+                setTapEffect((prev) => !prev);
+              }}
+              animate={
+                tapEffect
+                  ? {
+                      scale: 1.1,
+                      rotate: "5deg",
+                      transition: { duration: 0.2 },
+                    }
+                  : { scale: 1, rotate: "0deg", transition: { duration: 0.2 } }
+              }
               className="py-4 w-[200px]"
             >
               <Link
@@ -161,10 +175,16 @@ const Hero = () => {
                 (window.location.href = "https://github.com/legendtharun/")
               }
             />
+            <BiLogoGmail
+              className="text-md hover:scale-125 transition-transform duration-200 ease-in hover:cursor-pointer"
+              onClick={() =>
+                (window.location.href = "mailto:manikandan211205@gmail.com")
+              }
+            />
           </div>
         </div>
         <div
-          className="relative  md:col-span-1 h-auto  min-h-[60vh]
+          className="relative  md:col-span-1 h-auto  ps:h-[43vh] psl:h-[50vh] psxl:h-[60vh] sm:min-h-[75vh] md:min-h-[95vh] lg:min-h-[60vh]
         "
         >
           <div
@@ -173,7 +193,14 @@ const Hero = () => {
           >
             <img
               src={myImage}
-              className="w-full min-w-[400px]  lg:scale-[120%] absolute md:top-28 myimage"
+              className="w-full min-w-[400px]  lg:scale-[120%] absolute top-10 md:top-28"
+              style={{
+                background: "transparent",
+                filter:
+                  currentTheme === "dark"
+                    ? "drop-shadow(2px 0 0 #e4e3ed) drop-shadow(0 2px 0 #e4e3ed) drop-shadow(-2px 0 0 #e4e3ed) drop-shadow(0 -2px 0 #e4e3ed)"
+                    : "drop-shadow(2px 0 0 #13121c) drop-shadow(0 2px 0 #13121c) drop-shadow(-2px 0 0 #13121c) drop-shadow(0 -2px 0 #13121c)",
+              }}
             />
           </div>
         </div>

@@ -13,7 +13,10 @@ module.exports = {
         xsl: { max: "445px" },
         xsxl: { max: "500px" },
         xsxxl: { max: "935px" },
-        ms: { max: "978px" }, // Targets only devices below 350px
+        ms: { max: "978px" },
+        ps: "350px",
+        psl: "445px",
+        psxl: "500px",
       },
     },
   },

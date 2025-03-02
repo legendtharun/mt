@@ -23,13 +23,13 @@ const About = () => {
     <section
       id="About"
       className="relative flex justify-center  w-full 
-    bg-[#ecebf4] dark:bg-[#0b0a13] text-[#13121c] dark:text-[#e4e3ed] z-0 overflow-hidden p-5"
+    bg-[#ecebf4] dark:bg-[#0b0a13] text-[#13121c] dark:text-[#e4e3ed] z-0 overflow-hidden"
     >
       <div className="w-full text-left">
         <div className="grid grid-cols-1 md:grid-cols-2">
           <div className=" flex flex-col gap-5  p-5 md:p-7 lg:p-10">
             <motion.h2
-              className="font-anton font-semibold text-2xl md:text-4xl lg:text-6xl"
+              className="font-anton text-[2rem] md:text-[3rem] lg:text-[5rem] mr-auto"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true }}

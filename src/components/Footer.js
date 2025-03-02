@@ -3,12 +3,14 @@ import { SiWhatsapp } from "react-icons/si";
 import { FaInstagram } from "react-icons/fa6";
 import { FaLinkedin } from "react-icons/fa6";
 import { FaGithub } from "react-icons/fa";
+import { BiLogoGmail } from "react-icons/bi";
 import { motion } from "framer-motion";
 const Footer = () => {
   const [whatsappHover, setwhatsappHover] = useState(false);
   const [IgHover, setIgHover] = useState(false);
   const [LinHover, setLinHover] = useState(false);
   const [GhHover, setGhHover] = useState(false);
+  const [Gmail, setGmailHover] = useState(false);
   return (
     <footer
       id="Contact"
@@ -25,6 +27,10 @@ const Footer = () => {
         <motion.button
           onHoverStart={() => setwhatsappHover(true)}
           onHoverEnd={() => setwhatsappHover(false)}
+          onTap={() => {
+            setwhatsappHover((prev) => !prev);
+            setTimeout(() => setwhatsappHover(false), 600);
+          }}
           className="flex justify-center items-center gap-1 font-atkinson p-3 bg-[#25D366] text-[#e4e3ed]
            rounded-2xl
           dark:bg-opacity-80 overflow-hidden"
@@ -46,6 +52,10 @@ const Footer = () => {
         <motion.button
           onHoverStart={() => setIgHover(true)}
           onHoverEnd={() => setIgHover(false)}
+          onTap={() => {
+            setIgHover((prev) => !prev);
+            setTimeout(() => setIgHover(false), 600);
+          }}
           className="flex justify-center items-center gap-1 font-atkinson p-3 bg-gradient-to-r from-[#F58529] via-[#DD2A7B] via-[#8134AF] to-[#515BD4]
         text-[#e4e3ed] rounded-2xl bg-opacity-80"
           onClick={() =>
@@ -67,6 +77,10 @@ const Footer = () => {
         <motion.button
           onHoverStart={() => setLinHover(true)}
           onHoverEnd={() => setLinHover(false)}
+          onTap={() => {
+            setLinHover((prev) => !prev);
+            setTimeout(() => setLinHover(false), 600);
+          }}
           className="flex justify-center items-center gap-1 font-atkinson p-3 bg-[#0077B5]
         text-[#e4e3ed] rounded-2xl dark:bg-opacity-80"
           onClick={() =>
@@ -90,6 +104,10 @@ const Footer = () => {
         <motion.button
           onHoverStart={() => setGhHover(true)}
           onHoverEnd={() => setGhHover(false)}
+          onTap={() => {
+            setGhHover((prev) => !prev);
+            setTimeout(() => setGhHover(false), 600);
+          }}
           className="flex justify-center items-center gap-1 font-atkinson p-3 bg-[#13121c]
         text-[#e4e3ed] rounded-2xl dark:bg-opacity-80"
           onClick={() =>
@@ -105,6 +123,30 @@ const Footer = () => {
             transition={{ duration: 0.5, damping: 0.4, ease: "easeInOut" }}
           >
             Github
+          </motion.span>
+        </motion.button>
+        <motion.button
+          onHoverStart={() => setGmailHover(true)}
+          onHoverEnd={() => setGmailHover(false)}
+          onTap={() => {
+            setGmailHover((prev) => !prev);
+            setTimeout(() => setGmailHover(false), 600);
+          }}
+          className="flex justify-center items-center gap-1 font-atkinson p-3 bg-gradient-to-r from-[#D32F2F] via-[#FBC02D] to-[#388E3C]  
+        text-[#e4e3ed] rounded-2xl dark:bg-opacity-80"
+          onClick={() =>
+            (window.location.href = "mailto:manikandan211205@gmail.com")
+          }
+        >
+          <BiLogoGmail />
+          <motion.span
+            className="inline-block whitespace-nowrap overflow-hidden"
+            animate={
+              Gmail ? { width: "80px", opacity: 1 } : { width: 0, opacity: 0 }
+            }
+            transition={{ duration: 0.5, damping: 0.4, ease: "easeInOut" }}
+          >
+            GMail
           </motion.span>
         </motion.button>
       </div>
