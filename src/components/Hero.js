@@ -184,16 +184,16 @@ const Hero = ({ currentTheme }) => {
           </div>
         </div>
         <div
-          className="relative  md:col-span-1 h-auto  ps:h-[43vh] psl:h-[50vh] psxl:h-[60vh] sm:min-h-[75vh] md:min-h-[95vh] lg:min-h-[60vh]
+          className="relative  md:col-span-1 h-auto 
         "
         >
           <div
-            className="flex  absolute inset-0
+            className="flex w-full h-full items-center justify-center inset-0 p-3 pt-20
           "
           >
             <img
               src={myImage}
-              className="w-full min-w-[400px]  lg:scale-[120%] absolute top-10 md:top-28"
+              className="w-full min-w-[400px] scale-110  max-w-[500px]"
               style={{
                 background: "transparent",
                 filter:
